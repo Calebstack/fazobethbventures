@@ -59,16 +59,10 @@ if(!headers_sent()){
     header('Permissions-Policy: camera=(), microphone=(), geolocation=()');
 }
 
-define('DB_HOST', getenv('FAZOBETH_DB_HOST') !== false ? getenv('FAZOBETH_DB_HOST') : 'sql308.infinityfree.com');
-define('DB_NAME', getenv('FAZOBETH_DB_NAME') !== false ? getenv('FAZOBETH_DB_NAME') : 'if0_43055116_fazobeth_db');
-define('DB_USER', getenv('FAZOBETH_DB_USER') !== false ? getenv('FAZOBETH_DB_USER') : 'if0_43055116');
+define('DB_HOST', getenv('FAZOBETH_DB_HOST') !== false ? getenv('FAZOBETH_DB_HOST') : '');
+define('DB_NAME', getenv('FAZOBETH_DB_NAME') !== false ? getenv('FAZOBETH_DB_NAME') : '');
+define('DB_USER', getenv('FAZOBETH_DB_USER') !== false ? getenv('FAZOBETH_DB_USER') : '');
 define('DB_PASS', getenv('FAZOBETH_DB_PASS') !== false ? getenv('FAZOBETH_DB_PASS') : '');
-
-// Localhost fallbacks (commented out):
-// define('DB_HOST', getenv('FAZOBETH_DB_HOST') !== false ? getenv('FAZOBETH_DB_HOST') : 'localhost');
-// define('DB_NAME', getenv('FAZOBETH_DB_NAME') !== false ? getenv('FAZOBETH_DB_NAME') : 'fazobeth_db');
-// define('DB_USER', getenv('FAZOBETH_DB_USER') !== false ? getenv('FAZOBETH_DB_USER') : 'root');
-// define('DB_PASS', getenv('FAZOBETH_DB_PASS') !== false ? getenv('FAZOBETH_DB_PASS') : '');
 
 define('SITE_NAME', 'Fazobeth Ventures');
 define('SITE_URL', getenv('FAZOBETH_SITE_URL') ?: 'https://fazobethventures.site.je/fazobeth');
