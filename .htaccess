@@ -1,0 +1,8 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteRule ^(?:classes|partials|admin/classes|scratch|\.vscode|\.kilo)(?:/|$) - [F,L,NC]
+
+<FilesMatch "(?i)(^\.|\.log$|\.sql$|\.bak$|\.old$|\.orig$|\.env(?:\..*)?$)">
+    Require all denied
+</FilesMatch>

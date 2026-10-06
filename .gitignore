@@ -1,0 +1,6 @@
+/.env
+/.env.*
+!/.env.example
+/order_emails.log
+/.kilo/node_modules/
+/.kilo/worktrees/
